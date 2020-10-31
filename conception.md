@@ -25,6 +25,38 @@
 - [x] Les mauvais côtés de la Clean Architecture : https://www.jamesmichaelhickey.com/clean-architecture/
 - https://jimmybogard.com/vertical-slice-architecture/
 
+## Couplage
+
+### Pourquoi préférer un système faiblement couplé ("loose coupling") ?
+
+> Plus petit est le système à maintenir plus rapides sont les développements.
+
+> Plus petit est le système à maintenir plus rapide et simple sont la rédaction et l'exécution des tests.
+
+> Des systèmes couplés sont plus complexes à maintenir car faire évoluer un sous-ensemble du système requiert de faire évoluer les autres sous-ensembles dépendants.
+
+> Dans un système faiblement couplé, l'impact d'un défaut est plus limité.
+
+> Plus petit est le système mieux il sera compris.
+
+> Des systèmes couplés sont plus complexes à comprendre en raison du nombre d'élément à considérer.
+
+> Un système couplé sera plus facile à migrer dans un autre système.
+
+> Des systèmes couplés sont moins performants car leur performance est limité à celle du moins performant d'entre eux.
+
+> Loi de Déméter (1987) : un objet A peut appeler une méthode d'un objet B, mais A ne peut pas utiliser B pour accéder à un troisième objet et requérir ses services. Le système est alors plus maintenable car A ne dépend pas de la structure interne de B. B peut alors faire évoluer sa structure interne indépendament de A.
+
+### Ressources
+
+- [x] The pragmatic programmer, Orthogonality : https://flylib.com/books/en/1.315.1.23/1
+- [x] The pragramtic programmer, 
+Decoupling and the Law of Demeter
+ : https://flylib.com/books/en/1.315.1.52/1
+- [x] https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
+- [x] https://jonhilton.net/2016/03/09/why-coupling-will-destroy-your-application-and-how-to-avoid-it/
+- [x] https://www.ben-morris.com/why-is-loose-coupling-between-services-so-important/
+
 ## CQRS
 
 - https://codeopinion.com/cqrs-without-multiple-data-sources/
