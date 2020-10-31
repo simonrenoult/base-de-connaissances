@@ -2,7 +2,7 @@
 
 ## Général
 
-- ✅ Quatre règles pour un design simple : https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design
+- [x] Quatre règles pour un design simple : https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design
 - https://tqdev.com/2018-the-boring-software-manifesto
 - https://engagor.github.io/blog/2020/10/05/a-few-tips-for-making-your-code-easier-to-reason-about/
 - https://www.deconstructconf.com/2019/hillel-wayne-what-we-can-learn-from-software-history
@@ -18,11 +18,11 @@
 
 ## Clean Archiecture
 
-- ✅ Clean Architecture vs DDD : https://khalilstemmler.com/articles/software-design-architecture/domain-driven-design-vs-clean-architecture/ 
-- ✅ Origine des termes de la Clean Architecture : https://blog.octo.com/application-domain-infrastructure-des-mots-de-la-layered-hexagonal-clean-architecture/
-- ✅ DDD, CQS et Clean Architecture en TypeScript : https://khalilstemmler.com/articles/enterprise-typescript-nodejs/application-layer-use-cases/
+- [x] Clean Architecture vs DDD : https://khalilstemmler.com/articles/software-design-architecture/domain-driven-design-vs-clean-architecture/ 
+- [x] Origine des termes de la Clean Architecture : https://blog.octo.com/application-domain-infrastructure-des-mots-de-la-layered-hexagonal-clean-architecture/
+- [x] DDD, CQS et Clean Architecture en TypeScript : https://khalilstemmler.com/articles/enterprise-typescript-nodejs/application-layer-use-cases/
 - https://herbertograca.com/2017/09/28/clean-architecture-standing-on-the-shoulders-of-giants/
-- ✅ Les mauvais côtés de la Clean Architecture : https://www.jamesmichaelhickey.com/clean-architecture/
+- [x] Les mauvais côtés de la Clean Architecture : https://www.jamesmichaelhickey.com/clean-architecture/
 - https://jimmybogard.com/vertical-slice-architecture/
 
 ## CQRS
@@ -31,25 +31,25 @@
 - Keynote - Udi Dahan - DDD Europe 2020 : https://www.youtube.com/watch?v=-iuMjjKQnhg&feature=youtu.be
 - Creating IDs with CQRS and Event Sourcing in Java and .NET : https://thomasjaeger.wordpress.com/2016/01/09/creating-ids-with-cqrs-and-event-sourcing-in-java-and-net/
 - https://matthiasnoback.nl/2018/05/when-and-where-to-determine-the-id-of-an-entity/
-- ✅ CQRS, Fonctionnel, Event Sourcing & Domain Driven Design - Arnaud Lemaire - PHP Tour 2018 : https://www.youtube.com/watch?v=qBLtZN3p3FU&feature=youtu.be
+- [x] CQRS, Fonctionnel, Event Sourcing & Domain Driven Design - Arnaud Lemaire - PHP Tour 2018 : https://www.youtube.com/watch?v=qBLtZN3p3FU&feature=youtu.be
 - https://codeopinion.com/is-cqrs-complicated/
 - https://blog.ploeh.dk/2014/08/11/cqs-versus-server-generated-ids/
 
 ## Dette technique
 
 - https://jp-lambert.me/recenser-et-suivre-la-dette-technique-4146f1e5c7b9
-- ✅ https://www.lilobase.me/a-complexite-egale-des-realites-tres-differentes/
+- [x] https://www.lilobase.me/a-complexite-egale-des-realites-tres-differentes/
 - https://blog.octo.com/la-fin-de-la-dette-technique-resoudre-les-conflits/
 
 ## Domain Driven Design
 
-- ✅ DDD, CQS et Clean Architecture en TypeScript : https://khalilstemmler.com/articles/enterprise-typescript-nodejs/application-layer-use-cases/
+- [x] DDD, CQS et Clean Architecture en TypeScript : https://khalilstemmler.com/articles/enterprise-typescript-nodejs/application-layer-use-cases/
 - https://github.com/ardalis/DDD-NoDuplicates
 - https://gojko.net/2010/06/11/udi-dahan-the-biggest-mistakes-teams-make-when-applying-ddd/
 - https://blog.codecentric.de/en/2020/07/hexagon-schmexagon-1/
 - https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/
 - https://virtualddd.com/learning-ddd/
-- ✅ CQRS, Fonctionnel, Event Sourcing & Domain Driven Design - Arnaud Lemaire - PHP Tour 2018 https://www.youtube.com/watch?v=qBLtZN3p3FU&feature=youtu.be
+- [x] CQRS, Fonctionnel, Event Sourcing & Domain Driven Design - Arnaud Lemaire - PHP Tour 2018 https://www.youtube.com/watch?v=qBLtZN3p3FU&feature=youtu.be
 - https://philippe.bourgau.net/how-to-use-event-storming-to-introduce-domain-driven-design/
 - https://weronikalabaj.com/the-harsh-reality-of-a-domain-breakthrough/
 - https://github.com/ddd-crew/ddd-starter-modelling-process
@@ -97,10 +97,14 @@
 
 - Glossaire des termes d'eventstorming : https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet
 - https://zimarev.com/blog/event-sourcing/myth-busting/2020-07-09-overselling-event-sourcing/
-- ✅ CQRS, Fonctionnel, Event Sourcing & Domain Driven Design - Arnaud Lemaire - PHP Tour 2018 : https://www.youtube.com/watch?v=qBLtZN3p3FU&feature=youtu.be
+- [x] CQRS, Fonctionnel, Event Sourcing & Domain Driven Design - Arnaud Lemaire - PHP Tour 2018 : https://www.youtube.com/watch?v=qBLtZN3p3FU&feature=youtu.be
 - https://philippe.bourgau.net/how-to-use-event-storming-to-introduce-domain-driven-design/
 - https://xebia.com/blog/eventstorming-core-concepts-glossary-and-legend/
 
+## Extreme Programming
+
+- Extreme Programming 20 years later by Kent Beck : https://www.youtube.com/watch?v=cGuTmOUdFbo&feature=youtu.be
+- 
 ## Functional programming
 
 - https://fsharpforfunandprofit.com/rop/
@@ -129,7 +133,7 @@
 
 ## Monolithe
 
-- ✅ Comment découper un monolithe : https://engineering.gusto.com/chipping-away-at-a-monolith/
+- [x] Comment découper un monolithe : https://engineering.gusto.com/chipping-away-at-a-monolith/
 - GOTO 2019 • Monolith Decomposition Patterns • Sam Newman : https://www.youtube.com/watch?v=9I9GdSQ1bbM
 - https://www.kamilgrzybek.com/design/modular-monolith-integration-styles/
 
@@ -184,14 +188,10 @@
 
 ## TDD
 
-- ✅ TDD version microtest en graybox : https://www.geepawhill.org/2020/07/24/microtest-tdd-is-gray-box/
+- [x] TDD version microtest en graybox : https://www.geepawhill.org/2020/07/24/microtest-tdd-is-gray-box/
 - Why Research on Test-Driven Development is Inconclusive? https://arxiv.org/abs/2007.09863
 - https://www.stefanhendriks.com/2012/03/31/the-difference-between-tdd-and-test-first-development/
 - TDD,  where did it all go wrong : https://www.youtube.com/watch?v=HNjlJpuA5kQ&feature=youtu.be
 - https://twitter.com/ygrenzinger/status/1263725481096089600?s=09
 - https://www.geepawhill.org/2020/03/11/tdd-on-the-front-end/
 - Outside In TDD part I : https://www.youtube.com/watch?v=XHnuMjah6ps
-
-## Extreme Programming
-
-- Extreme Programming 20 years later by Kent Beck : https://www.youtube.com/watch?v=cGuTmOUdFbo&feature=youtu.be

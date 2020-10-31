@@ -8,6 +8,6 @@
 
 ## TypeScript
 
-- ✅ DDD, CQS et Clean Architecture en TypeScript : https://khalilstemmler.com/articles/enterprise-typescript-nodejs/application-layer-use-cases/
+- [x] DDD, CQS et Clean Architecture en TypeScript : https://khalilstemmler.com/articles/enterprise-typescript-nodejs/application-layer-use-cases/
 - https://practicalprogramming.fr/apprendre-typescript/
 - https://medium.com/doctolib/typescript-migration-the-easy-way-a1c63246d8ab
