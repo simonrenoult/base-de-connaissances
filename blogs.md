@@ -1,0 +1,35 @@
+# 📻 Blogs
+
+- https://herbertograca.com/
+- https://blog.ploeh.dk/
+- https://martinfowler.com/
+- https://medium.com/nick-tune-tech-strategy-blog
+- https://blog.octo.com/
+- https://codurance.com/publications
+- https://blog.zenika.com
+- https://medium.com/@NetflixTechBlog
+- https://khalilstemmler.com/articles
+- https://medium.com/@kentbeck_7670
+- https://www.geepawhill.org
+- https://www.lilobase.me
+- https://verraes.net/
+- https://matthiasnoback.nl/
+- https://michaelfeathers.silvrback.com/
+- https://blog.thecodewhisperer.com/
+- https://8thlight.com/blog/
+- https://netflixtechblog.com/
+- https://medium.com/wardleymaps
+- https://ardalis.com/blog
+- https://medium.com/@jplambert ou https://jp-lambert.me/fr-only/home
+- https://udidahan.com/articles/
+- https://www.developsense.com/blog/
+- https://jessitron.com/blog/
+- https://enterprisecraftsmanship.com/posts
+- https://philippe.bourgau.net/
+- https://nelis.boucke.be/
+- https://codeopinion.com/
+- https://sandimetz.com/blog
+- https://domaincentric.net/blog
+- https://blog.avanscoperta.it/
+- https://kentcdodds.com/blog/
+- https://blog.sapiensworks.com/
