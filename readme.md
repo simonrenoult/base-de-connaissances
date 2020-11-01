@@ -62,6 +62,10 @@ JavaScript lover, moi ? Non, pas du tout. Mais y'a d'autres truc aussi.
 
 ---
 
+## [🔗 Livres](livres.md)
+
+---
+
 ## [🔗 Log](log.md)
 
 ---
