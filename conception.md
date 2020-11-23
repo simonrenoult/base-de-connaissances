@@ -77,6 +77,8 @@ Decoupling and the Law of Demeter
 - https://thinkbeforecoding.com/post/2013/07/28/Event-Sourcing-vs-Command-Sourcing
 - [x] https://herbertograca.com/2017/10/19/from-cqs-to-cqrs/
 - https://matthiasnoback.nl/2017/03/bash-practices-cqs-and-return-values/
+- Greg Young - CQRS and Event Sourcing - Code on the beach 2104 : https://www.youtube.com/watch?v=JHGkaShoyNs
+
 
 ## Dette technique
 
