@@ -75,7 +75,7 @@ Decoupling and the Law of Demeter
 - https://codeopinion.com/is-cqrs-complicated/
 - https://blog.ploeh.dk/2014/08/11/cqs-versus-server-generated-ids/
 - https://thinkbeforecoding.com/post/2013/07/28/Event-Sourcing-vs-Command-Sourcing
-- https://herbertograca.com/2017/10/19/from-cqs-to-cqrs/
+- [x] https://herbertograca.com/2017/10/19/from-cqs-to-cqrs/
 - https://matthiasnoback.nl/2017/03/bash-practices-cqs-and-return-values/
 
 ## Dette technique
