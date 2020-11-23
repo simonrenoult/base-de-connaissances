@@ -101,6 +101,10 @@ Decoupling and the Law of Demeter
 - https://blog.avanscoperta.it/2020/08/04/domain-driven-design-in-2020/
 - https://blog.sapiensworks.com/post/2015/11/23/DDD-is-not-programming
 
+### Aggregats
+
+- https://github.com/ddd-crew/aggregate-design-canvas
+
 ### Bounded contexts
 
 - https://medium.com/nick-tune-tech-strategy-blog/bounded-context-canvas-recipe-use-case-swimlanes-11ca647175d3
