@@ -54,9 +54,9 @@
 Decoupling and the Law of Demeter
  : https://flylib.com/books/en/1.315.1.52/1
 - [ ]  Working Effectively with Legacy Code, Dependency-Breaking Techniques (chap 25)
-- [ ]  Clean Architecture, Component Cohesion
-- [ ]  Clean Architecture, Component Coupling
-- [ ]  Clean Architecture, Independance
+- [ ]  Clean Architecture, Component Cohesion (chap 13)
+- [ ]  Clean Architecture, Component Coupling (chap 14)
+- [ ]  Clean Architecture, Independance (chap 16)
 - [ ]  Refactoring, Divergent Change : https://martinfowler.com/books/refactoring.html
 - [ ]  Refactoring, Shotgun Surgery : https://martinfowler.com/books/refactoring.html
 - [ ]  Refactoring, Message Chain : https://martinfowler.com/books/refactoring.html
