@@ -212,6 +212,14 @@ Decoupling and the Law of Demeter
 
 ## Tests 
 
+### Pourquoi écrire des tests automatisés ?
+
+> Permet de prévenir les régressions en cas de modification du code testé
+
+> Permet de documenter la fonctionnalité testée
+
+### Références
+
 - https://mariocervera.com/non-obvious-benefits-automated-testing
 - https://codemanship.wordpress.com/2020/09/26/readable-parameterized-tests/
 - Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz : https://www.youtube.com/watch?v=URSWYvyc42M
@@ -237,7 +245,7 @@ Decoupling and the Law of Demeter
 - https://martinfowler.com/articles/mocksArentStubs.html
 
 
-## TDD
+### TDD
 
 - [x] TDD version microtest en graybox : https://www.geepawhill.org/2020/07/24/microtest-tdd-is-gray-box/
 - Why Research on Test-Driven Development is Inconclusive? https://arxiv.org/abs/2007.09863
