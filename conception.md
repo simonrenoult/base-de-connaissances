@@ -88,6 +88,7 @@ Decoupling and the Law of Demeter
 
 ## Domain Driven Design
 
+- [ ] Le DDD est-il adapté à tous vos projets ? https://www.lilobase.me/le-domain-driven-design-est-il-adapte-a-tous-vos-projets/amp/?__twitter_impression=true&s=09
 - [x] DDD, CQS et Clean Architecture en TypeScript : https://khalilstemmler.com/articles/enterprise-typescript-nodejs/application-layer-use-cases/
 - https://github.com/ardalis/DDD-NoDuplicates
 - https://gojko.net/2010/06/11/udi-dahan-the-biggest-mistakes-teams-make-when-applying-ddd/
@@ -105,6 +106,7 @@ Decoupling and the Law of Demeter
 - https://particular.net/blog/putting-your-events-on-a-diet
 - https://blog.avanscoperta.it/2020/08/04/domain-driven-design-in-2020/
 - https://blog.sapiensworks.com/post/2015/11/23/DDD-is-not-programming
+- https://tpierrain.blogspot.com/2020/04/et-si-les-adaptateurs-faisaient-eux.html
 
 ### Aggregats
 
