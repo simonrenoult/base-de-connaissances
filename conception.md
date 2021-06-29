@@ -1,5 +1,6 @@
 # 🧱 Conception
 
+
 ## Général
 
 - [x] Quatre règles pour un design simple : https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design
@@ -16,6 +17,8 @@
 - https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 - https://simpleprogrammer.com/respecting-abstraction/
 
+
+
 ## Clean Archiecture
 
 - [x] Clean Architecture vs DDD : https://khalilstemmler.com/articles/software-design-architecture/domain-driven-design-vs-clean-architecture/ 
@@ -24,6 +27,8 @@
 - https://herbertograca.com/2017/09/28/clean-architecture-standing-on-the-shoulders-of-giants/
 - [x] Les mauvais côtés de la Clean Architecture : https://www.jamesmichaelhickey.com/clean-architecture/
 - https://jimmybogard.com/vertical-slice-architecture/
+
+
 
 ## Couplage
 
@@ -65,7 +70,22 @@ Decoupling and the Law of Demeter
 - [x] https://www.ben-morris.com/why-is-loose-coupling-between-services-so-important/
 - [ ] https://www.lilobase.me/votre-application-a-besoin-de-son-jardin-secret-attention-a-la-localite-de-linformation/
 
+
+
 ## CQRS
+
+### Pourquoi ?
+
+> Dans un système complexe, le processus métier ne peut être connu de tous de manière exhaustive. 
+> Dès lors, il convient d'encapsuler les différentes opérations au sein d'abstractions.
+> On parle de **Commande** pour les ordres envoyés au système et de **Queries** pour les questions
+> posées au système.
+
+> Distinguer **Commandes** et **Queries** permet de faire émerger un système **CQS** et non **CQRS**.
+> C'est la distinction de la localisation de la donnée et des modèles ainsi mis à jour qui donnent
+> la lettre R au CQRS. 
+
+### Références
 
 - https://codeopinion.com/cqrs-without-multiple-data-sources/
 - Keynote - Udi Dahan - DDD Europe 2020 : https://www.youtube.com/watch?v=-iuMjjKQnhg&feature=youtu.be
@@ -76,8 +96,9 @@ Decoupling and the Law of Demeter
 - https://blog.ploeh.dk/2014/08/11/cqs-versus-server-generated-ids/
 - https://thinkbeforecoding.com/post/2013/07/28/Event-Sourcing-vs-Command-Sourcing
 - [x] https://herbertograca.com/2017/10/19/from-cqs-to-cqrs/
-- https://matthiasnoback.nl/2017/03/bash-practices-cqs-and-return-values/
+- [x] https://matthiasnoback.nl/2017/03/bash-practices-cqs-and-return-values/
 - Greg Young - CQRS and Event Sourcing - Code on the beach 2104 : https://www.youtube.com/watch?v=JHGkaShoyNs
+
 
 
 ## Dette technique
@@ -85,6 +106,8 @@ Decoupling and the Law of Demeter
 - https://jp-lambert.me/recenser-et-suivre-la-dette-technique-4146f1e5c7b9
 - [x] https://www.lilobase.me/a-complexite-egale-des-realites-tres-differentes/
 - https://blog.octo.com/la-fin-de-la-dette-technique-resoudre-les-conflits/
+
+
 
 ## Domain Driven Design
 
@@ -107,10 +130,18 @@ Decoupling and the Law of Demeter
 - https://blog.avanscoperta.it/2020/08/04/domain-driven-design-in-2020/
 - https://blog.sapiensworks.com/post/2015/11/23/DDD-is-not-programming
 - https://tpierrain.blogspot.com/2020/04/et-si-les-adaptateurs-faisaient-eux.html
+- [x] https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/
 
 ### Aggregats
 
 - https://github.com/ddd-crew/aggregate-design-canvas
+
+#### FAQ
+
+##### Comment gérer les dépendances entre agrégats ? 
+
+Soient deux agrégats A et B où B possède une référence à A via l'id de ce dernier. Alors les commandes modifiant B peuvent s'assurer de l'existence de A (que A et B appartiennent au même BC ou non). 
+Exemple : `ARepository.verifierExistence(commandeModifiantB.IdentifiantDeA)`
 
 ### Bounded contexts
 
@@ -139,26 +170,57 @@ Decoupling and the Law of Demeter
 
 - https://github.com/kgrzybek/modular-monolith-with-ddd
 
+
+
 ## Event Sourcing
 
 - https://www.continuousimprover.com/2020/06/guidelines-event-sourcing.html
 - https://www.eventstore.com/blog/the-cost-of-creating-a-stream
 
+
+
 ## Event Storming
 
 - Glossaire des termes d'eventstorming : https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet
 - https://zimarev.com/blog/event-sourcing/myth-busting/2020-07-09-overselling-event-sourcing/
-- [x] CQRS, Fonctionnel, Event Sourcing & Domain Driven Design - Arnaud Lemaire - PHP Tour 2018 : https://www.youtube.com/watch?v=qBLtZN3p3FU&feature=youtu.be
 - https://philippe.bourgau.net/how-to-use-event-storming-to-introduce-domain-driven-design/
 - https://xebia.com/blog/eventstorming-core-concepts-glossary-and-legend/
+
+### Que faire de la documentation écrite avant l'Event Storming ?
+
+- Prendre connaissance de cette documentation par respect pour ceux qui l'ont écrite
+- Elle reste majoritairement un [sunk cost](https://en.wikipedia.org/wiki/Sunk_cost)
+- L'artefact nécessaire à la production logicielle est visuelle et évènementielle, pas "documentative"
+- La documentation est utile pour rentrer dans les détails, pas pour une vue générale
+
+### Comment découvrir les pivotal events ?
+
+D'après les discussions entre participants quand deux participants sont en désaccords sur le contenu nécessaire au déclenchement d'un évènement.
+
+Quand deux personnes modifient un même évènement.
+
+Quand le pattern Draft/Executable émerge, c'est-à-dire d'un côté un métier dont le cycle de vie concerne un version "brouillon" et de l'autre un métier dont le cycle de vie concerne une version "publiée"
+
+### Quand mettre à jour l'Event Storming
+
+Le stocker pour ne pas frustrer les gens.
+
+Redémarrer from scratch quand on fait une rétrospective du modèle.
+
+En numérique, c'est très difficile de le finir mais facile à mettre à jour.
+
 
 ## Extreme Programming
 
 - Extreme Programming 20 years later by Kent Beck : https://www.youtube.com/watch?v=cGuTmOUdFbo&feature=youtu.be
-- 
+
+
+
 ## Functional programming
 
 - https://fsharpforfunandprofit.com/rop/
+
+
 
 ## Hexagonal Architecure
 
@@ -166,11 +228,15 @@ Decoupling and the Law of Demeter
 - https://blog.codecentric.de/en/2020/07/hexagon-schmexagon-1/
 - https://tpierrain.blogspot.com/2020/03/architecture-hexagonale-ne-vous-perdez.html
 
+
+
 ## Microservices
 
 - https://medium.com/transferwise-engineering/learnings-from-migrating-legacy-to-microservices-2ef4c0f6a766
 - https://microservices.io/patterns/data/saga.html
 - https://microservices.io/index.html
+
+
 
 ## Mob programming
 
@@ -178,15 +244,21 @@ Decoupling and the Law of Demeter
 - https://proagile.se/blog/remote-mob-programming-insights-captured-during-a-webinar-with-woody-zuill
 - GOTO 2019 • Mob Programming and the Power of Flow • Woody Zuill : https://www.youtube.com/watch?v=28S4CVkYhWA
 
+
+
 ## Modélisation
 
 - Visual and Collaborative Modelling - Kenny Baas-Schwegler - DDD Europe 2020 : https://www.youtube.com/watch?v=5RrEzJM5bdw
+
+
 
 ## Monolithe
 
 - [x] Comment découper un monolithe : https://engineering.gusto.com/chipping-away-at-a-monolith/
 - GOTO 2019 • Monolith Decomposition Patterns • Sam Newman : https://www.youtube.com/watch?v=9I9GdSQ1bbM
 - https://www.kamilgrzybek.com/design/modular-monolith-integration-styles/
+
+
 
 ## Refactoring et dette technique
 
@@ -202,6 +274,8 @@ Decoupling and the Law of Demeter
 - https://verraes.net/2013/09/extract-till-you-drop/
 - https://williamdurand.fr/2013/06/03/object-calisthenics/
 
+
+
 ## SOLID
 
 - https://shadow-tech.fr/posts/apprenez-enfin-a-coder-proprement-le-principe-de-responsabilite-unique-%28solid-1-5%29
@@ -209,6 +283,8 @@ Decoupling and the Law of Demeter
 - https://shadow-tech.fr/posts/arretez-de-faire-du-code-illisible
 - https://shadow-tech.fr/posts/le-principe-de-separation-des-interfaces-va-vous-aider-a-mieux-coder-%28solid-4-5%29
 - https://shadow-tech.fr/posts/voici-pourquoi-vous-devez-absolument-appliquer-le-principe-d-inversion-de-dependance-%28solid-5-5%29
+
+
 
 ## Tests 
 
@@ -243,7 +319,6 @@ Decoupling and the Law of Demeter
 - https://blog.frankdejonge.nl/testing-without-mocking-frameworks/
 - https://isaiahperumalla.wordpress.com/2008/05/28/test-driven-design-using-mocks-lessons-learnt-part-2/
 - https://martinfowler.com/articles/mocksArentStubs.html
-
 
 ### TDD
 
